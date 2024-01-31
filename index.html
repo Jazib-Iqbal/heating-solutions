@@ -26,189 +26,125 @@
 
   <header>
 
-    <div class="container">
+    <div class="nav_top">
 
-      <div class="nav_top d-flex">
+      <div class="container">
 
-        <ul class="nav_top-list ul_style-none ul_alignment">
+        <ul class="nav_top-list ul_alignment ul_style-none">
           <li>
-            
-
-
-          <section class="call-buton">
-            <a class="cc-calto-action-ripple" href="tel:+923155558180">
-              <!-- <i class="icon-mobile"></i> -->
-              <i class="bi bi-telephone-fill"></i>
-              
-            </a>
-
-            <span class="num">+923155558180</span>
-          </section>
-
+            <a  href="tel:03155558180" class="nav_top-item btn_custom center_content">
+              <i class="bi bi-telephone-fill"></i>1234-1234567</a>
           </li>
 
-
           <li>
-            <button class="mailing_btn center_content" onclick="sendEmailDefault()"><i class="bi bi-envelope-fill"></i><span>info@emailaddress.com</span></button>
+
+            <a href="tel:03155558180" class="nav_top-item btn_custom center_content">
+              <i class="bi bi-envelope-fill"></i>info@companyname.com</a>
           </li>
         </ul>
 
-        
+      </div><!-- /.container -->
 
-        <div class="search_sect ps_r">
-          <!-- <i class="icon-search"></i> -->
-          <form>
-            <input type="text" name="search" placeholder="Search..">
-          </form>
-        </div>
-        
-        
+    </div><!-- /.nav_top -->
 
-      </div><!-- /.nav_top -->
+    <div class="brand">
 
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./img/logo (2).png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">home</a>
-              </li>
+      <a class="company_name-main btn_custom" href="#">company name</a>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">about us</a>
-              </li>
+    </div><!-- /.brand -->
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">faqs</a>
-              </li>
+    <div class="nav_second">
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">services</a>
-              </li>
+      <div class="container">
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">how it works</a>
-              </li>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">select page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">contact us</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">home</a>
+                </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">search</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">about us</a>
+                </li>
 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link company_name" href="#">company name</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">faqs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">how it works</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link search_icon" href="#"><i class="bi bi-search"></i></a>
+                </li>
 
             </ul>
-
-
-
-
-
-
+              
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-    </div><!-- /.container -->
+      </div><!-- /.container -->
+
+    </div><!-- /.nav_second -->
 
   </header>
 
+
   <main>
 
-    <section class="hero_sect ps_r">
+    <section class="hero_sect">
 
-      <div class="slider_sect ps_r">
+      <div class="hero_top ps_r">
+        <img src="./img/hero-img.jpg" alt="">
 
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-              <img src="./img/heroA.jpg" class="d-block w-100" alt="...">
-            </div>
-
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="./img/heroB.jpg" class="d-block w-100" alt="...">
-            </div>
-
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="./img/heroC (2).jpg" class="d-block w-100" alt="...">
-            </div>
-            
-          </div>
-          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button> -->
-        </div>
-
-      </div><!-- /.slider_sect -->
-
-      <div class="hero_text-sect">
-
-        <div class="container">
-
-          <div class="heading_sect">
-
-            <h2 class="ps_r">Lorem ipsum dolor sit amet.
-              <small>Lorem, ipsum dolor.</small>
-            </h2>
-
-          </div><!-- /.heading_sect -->
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo et, nostrum, facere reprehenderit eius accusantium atque totam quidem veniam iusto ab at, accusamus distinctio eligendi animi aperiam nemo quas?</p>
-
-
-        </div><!-- /.container -->
-
-        <div class="eligilibity_checker">
+        <div class="hero_top-text">
 
           <div class="container">
 
-            <div class="heading_sect">
-
-              <h2 class="ps_r">free eligibility checker
-                <!-- <small>its simple</small> -->
-              </h2>
-  
-            </div><!-- /.heading_sect -->
-  
-            
-            <div class="form_sect">
-
-              <div class="container">
-
-                <h2>what's you postel code</h2>
-
-                <input type="text" placeholder="eg.12E4">
-
-                <a class="btn_custom next_page-btn" href="./page-inprogress.html">next step</a>
-
-              </div><!-- /.container -->
-
-            </div><!-- /.form_sect -->
+            <h2>how to get central heating system</h2>
 
           </div><!-- /.container -->
-  
-        </div><!-- /.eliglibity_checker -->
 
-      </div><!-- /.hero_text-sect -->
-      
-      
+        </div><!-- /.hero_top-text -->
+      </div><!-- /.hero_top -->
 
     </section><!-- /.hero_sect -->
 
-
   </main>
+
+  
 
   <footer>
 
