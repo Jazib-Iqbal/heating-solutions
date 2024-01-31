@@ -363,6 +363,18 @@ background: linear-gradient(0deg, rgba(13,75,124,0.9557072829131653) 25%, rgba(1
   //styling of hero section 
 
   .hero_text-sect{
+    bottom: 50%;
+    transform: translateY(50%);
+
+    .eligilibity_checker{
+      background-color: transparent;
+
+      .form_sect{
+        h2{
+          color: $white;
+        }
+      }
+    }
     .heading_sect{
       h2{
         &:after{

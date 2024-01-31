@@ -9251,6 +9251,16 @@ span.num {
     background: transparent;
     border-radius: 0.5rem;
   }
+  .hero_text-sect {
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .hero_text-sect .eligilibity_checker {
+    background-color: transparent;
+  }
+  .hero_text-sect .eligilibity_checker .form_sect h2 {
+    color: #ffffff;
+  }
   .hero_text-sect .heading_sect h2:after {
     transform: translateX(-0.5rem);
   }
