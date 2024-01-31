@@ -13,56 +13,58 @@
 //styling of nav section
 
 
-.nav_top{
+.nav_top {
   background-color: $theme-green;
   padding: .5rem 0;
-  
+
 }
 
-.nav_top-list{
+.nav_top-list {
   gap: 1rem;
   margin: 0;
 }
 
-.nav_top-item{
+.nav_top-item {
   color: $white;
   font-size: calc(.8rem + .2vw);
-  i{
+
+  i {
     margin-right: .5rem;
     display: inline-block;
     margin-bottom: .25rem;
   }
 
-  &:hover{
+  &:hover {
     color: $white;
   }
 }
 
-.navbar{
+.navbar {
   justify-content: center;
 }
 
-.navbar-brand{
+.navbar-brand {
   text-transform: uppercase;
   display: none;
 }
-.navbar-expand-lg .navbar-nav{
+
+.navbar-expand-lg .navbar-nav {
   align-items: center;
 }
 
-.nav-link{
+.nav-link {
   text-transform: uppercase;
   color: $black;
 }
 
 
-.nav-item{
-  .active{
-    color: $theme-green!important;
+.nav-item {
+  .active {
+    color: $theme-green !important;
   }
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
   border-color: transparent;
 }
 
@@ -72,86 +74,140 @@
   box-shadow: 0 0 0 0;
 }
 
-.company_name{
+.company_name {
   font-size: calc(2rem + 1vw);
   // padding: 0 1.5rem!important;
 }
 
-.company_name-main{
+.company_name-main {
   display: none;
   font-size: calc(2rem + 1vw);
-  padding:  1.5 0 0 0!important;
+  padding: 1.5 0 0 0 !important;
   color: $theme-green;
   text-transform: uppercase;
 }
 
-.search_icon{
+.search_icon {
   font-size: .9rem;
 }
 
-.nav_parent{
+.nav_parent {
   // display: flex;
   // flex-direction: column;
 }
 
-.brand{
+.brand {
   text-align: center;
   padding-top: 1.5rem;
 }
 
-.nav_second{
+.nav_second {
   padding: 1.5rem 0;
 }
 
 
 //styling of hero sect
 
-.hero_top{
-  img{
+.hero_top {
+  img {
     height: 90vh;
     width: 100%;
     object-fit: cover;
   }
+
+  .hero_top-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+
+
+    .hero_top-text-inner {
+      background-color: $white;
+      border-top-right-radius: .25rem;
+      border-top-left-radius: .25rem;
+      text-align: center;
+      border-bottom: 4px solid $white;
+      padding: 0 .5rem;
+
+      h2 {
+        font-size: calc(1.2rem + .5vw);
+        text-transform: uppercase;
+        padding-top: 1rem;
+        margin: 0;
+        font-weight: bold;
+        // color: $theme-green;
+      }
+    }
+
+  }
 }
 
-.hero_top-heading{
+
+
+.hero_top-heading {
   font-size: calc(1rem + .5vw);
+  
+}
+
+
+.hero_top-bottom {
+  background-color: $theme-green;
+
+  .hero_top-bottom-inner {
+    background-color: $white;
+    padding: 1rem 0;
+
+    .hero_card{
+      padding: 1rem 0;
+      text-align: center;
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+      figcaption{
+        color: $green;
+        font-size: calc(1rem + .5vw);
+      }
+    }
+  }
 }
 
 @media(max-width: 1200px) {
 
-    //styling of nav section
+  //styling of nav section
 
-  .company_name{
+  .company_name {
     display: none;
   }
 
-  .company_name-main{
+  .company_name-main {
     display: block;
   }
-  
-  
+
+
+}
+
+@media(max-width: 992px) {
+
+  //styling of nav section
+
+  .navbar-brand {
+    display: block;
   }
 
-  @media(max-width: 992px) {
-
-    //styling of nav section
-
-    .navbar-brand{
-      display: block;
-    }
-
-    .nav_top-list{
-      flex-direction: column;
-      gap: .25rem;
-    }
-
-    .nav_parent{
-      flex-direction: column-reverse;
-    }
-  
-  
+  .nav_top-list {
+    flex-direction: column;
+    gap: .25rem;
   }
+
+  .nav_parent {
+    flex-direction: column-reverse;
+  }
+
+
+}
 
 // @media(max-width: 992px) {
 //   .intro_sect {

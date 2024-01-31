@@ -8891,6 +8891,11 @@ textarea.form-control-lg {
   color: #ffffff;
 }
 
+h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: BrandonText-Regular, sans-serif;
   line-height: 1.25;
@@ -8965,45 +8970,6 @@ body {
   color: #74B1E0;
   font-weight: 600;
   text-transform: uppercase;
-}
-
-.heading_sect .heading_main {
-  margin-bottom: 1rem;
-}
-.heading_sect .heading_main small {
-  display: block;
-  margin-bottom: 1rem;
-  font-size: 30%;
-  color: white;
-}
-.heading_sect p {
-  font-family: BrandonText-Regular, sans-serif;
-  font-size: calc(0.9rem + 0.5vw);
-}
-
-.btn_bordered {
-  border: 1px solid #74B1E0;
-  box-shadow: #ffffff 0 0 5px;
-  color: #ffffff;
-  text-transform: capitalize;
-  font-size: calc(0.5rem + 0.5vw);
-  overflow: hidden;
-}
-.btn_bordered::after {
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-color: #ffffff;
-  transform: translateY(100%);
-  transition: all 0.2s linear;
-  z-index: -1;
-}
-.btn_bordered:hover {
-  box-shadow: #000000 0 0 10px;
-  color: initial;
-}
-.btn_bordered:hover::after {
-  transform: translateY(0);
 }
 
 @media (max-width: 576px) {
@@ -9097,8 +9063,49 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.hero_top .hero_top-text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.hero_top .hero_top-text .hero_top-text-inner {
+  background-color: #ffffff;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  text-align: center;
+  border-bottom: 4px solid #ffffff;
+  padding: 0 0.5rem;
+}
+.hero_top .hero_top-text .hero_top-text-inner h2 {
+  font-size: calc(1.2rem + 0.5vw);
+  text-transform: uppercase;
+  padding-top: 1rem;
+  margin: 0;
+  font-weight: bold;
+}
 
 .hero_top-heading {
+  font-size: calc(1rem + 0.5vw);
+}
+
+.hero_top-bottom {
+  background-color: #8CC43F;
+}
+.hero_top-bottom .hero_top-bottom-inner {
+  background-color: #ffffff;
+  padding: 1rem 0;
+}
+.hero_top-bottom .hero_top-bottom-inner .hero_card {
+  padding: 1rem 0;
+  text-align: center;
+}
+.hero_top-bottom .hero_top-bottom-inner .hero_card img {
+  display: block;
+  margin: 0 auto;
+}
+.hero_top-bottom .hero_top-bottom-inner .hero_card figcaption {
+  color: #198754;
   font-size: calc(1rem + 0.5vw);
 }
 
