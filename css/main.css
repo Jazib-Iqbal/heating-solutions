@@ -9057,6 +9057,14 @@ body {
   padding: 1.5rem 0;
 }
 
+.hero_top .hero_ing-sect::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .hero_top img {
   height: 90vh;
   width: 100%;
@@ -9107,6 +9115,13 @@ body {
 .hero_top-bottom .hero_top-bottom-inner .hero_card figcaption {
   color: #198754;
   font-size: calc(1rem + 0.5vw);
+}
+
+.intro_top-strip {
+  background-color: #4d4d4d;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0.5rem;
 }
 
 @media (max-width: 1200px) {

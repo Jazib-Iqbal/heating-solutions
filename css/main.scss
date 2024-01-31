@@ -109,6 +109,17 @@
 //styling of hero sect
 
 .hero_top {
+
+  .hero_ing-sect{
+    &::after{
+      content: '';
+      position: absolute;
+      inset: 0;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: $black, $alpha: .6);
+    }
+  }
   img {
     height: 90vh;
     width: 100%;
@@ -174,6 +185,15 @@
   }
 }
 
+//styling of intro_top-strip sect
+
+.intro_top-strip{
+
+  background-color: lighten($color: $black, $amount: 30%);
+  color: $white;
+  text-align: center;
+  padding: 1rem .5rem;
+}
 @media(max-width: 1200px) {
 
   //styling of nav section
