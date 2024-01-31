@@ -9034,6 +9034,7 @@ body {
 
 .company_name {
   font-size: calc(2rem + 1vw);
+  color: #198754 !important;
 }
 
 .company_name-main {
