@@ -9252,8 +9252,15 @@ span.num {
     border-radius: 0.5rem;
   }
   .hero_text-sect {
+    padding-top: 1rem;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 90%;
+    margin: 0 auto;
     bottom: 50%;
-    transform: translateY(50%);
   }
   .hero_text-sect .eligilibity_checker {
     background-color: transparent;

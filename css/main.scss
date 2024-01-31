@@ -363,8 +363,15 @@ background: linear-gradient(0deg, rgba(13,75,124,0.9557072829131653) 25%, rgba(1
   //styling of hero section 
 
   .hero_text-sect{
+    padding-top: 1rem;
+    backdrop-filter: blur(2px);
+    background-color: rgba($color: $black, $alpha: .1);
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 90%;
+    margin: 0 auto;
     bottom: 50%;
-    transform: translateY(50%);
+    // transform: translateY(50%);
 
     .eligilibity_checker{
       background-color: transparent;
