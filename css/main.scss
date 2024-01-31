@@ -76,7 +76,7 @@
 
 .company_name {
   font-size: calc(2rem + 1vw);
-  color: $green!important;
+  color: $theme-green!important;
   // padding: 0 1.5rem!important;
 }
 
@@ -86,16 +86,14 @@
   padding: 1.5 0 0 0 !important;
   color: $theme-green;
   text-transform: uppercase;
+  
 }
 
 .search_icon {
   font-size: .9rem;
 }
 
-.nav_parent {
-  // display: flex;
-  // flex-direction: column;
-}
+
 
 .brand {
   text-align: center;
