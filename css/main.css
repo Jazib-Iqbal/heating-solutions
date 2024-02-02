@@ -9025,6 +9025,7 @@ body {
 .heading_sect p {
   width: 80%;
   margin: 1rem auto;
+  text-transform: initial;
 }
 
 .after_contant {
@@ -9353,19 +9354,17 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem;
   color: #ffffff;
   z-index: 2;
   text-align: left;
   font-weight: bold;
   text-transform: uppercase;
 }
-.service_card figcaption h3 {
-  padding: 0 0.5rem;
-}
 .service_card figcaption p {
   font-weight: normal;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
+  text-transform: initial;
   font-size: calc(0.5rem + 0.5vw);
 }
 
