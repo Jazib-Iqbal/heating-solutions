@@ -9368,6 +9368,38 @@ header {
   font-size: calc(0.5rem + 0.5vw);
 }
 
+.our_standards .row {
+  align-items: center;
+}
+
+.our_standard-text-sect h2 {
+  font-size: calc(2rem + 0.5vw);
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #8CC43F;
+}
+.our_standard-text-sect p {
+  margin: 1rem 0;
+  color: #666666;
+}
+.our_standard-text-sect .btn_wrapper {
+  gap: 1rem;
+}
+
+.our_standards-lists {
+  margin: 1.5rem 0;
+  gap: 2rem;
+}
+.our_standards-lists .standard_list-item i {
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.our_standard-btn {
+  background-color: #8CC43F;
+  text-transform: uppercase;
+}
+
 @media (max-width: 992px) {
   .navbar-brand {
     display: block;
@@ -9383,6 +9415,12 @@ header {
   }
   .our_services .intro_sect [class*=col-] {
     padding: 1rem 12px;
+  }
+  .our_standards .intro_sect [class*=col-] {
+    padding: 1rem 12px;
+  }
+  img {
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 576px) {
