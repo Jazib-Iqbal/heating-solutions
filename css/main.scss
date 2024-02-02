@@ -408,6 +408,7 @@ header{
 
 
 .service_card{
+  cursor: pointer;
   .after_contant{
     &:after{
       background: rgb(0,0,0);
@@ -424,8 +425,20 @@ header{
     padding: 1rem 0;
     color: $white;
     z-index: 2;
-    text-align: center;
-    font-weight: bold;text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    h3{
+      padding: 0 .5rem;
+    }
+
+    p{
+      font-weight: normal;
+      margin: .5rem;
+      font-size: calc(.5rem + .5vw);
+
+    }
   }
 }
 
@@ -476,6 +489,15 @@ header{
   }
 
   //styling of nav section
+
+  .nav-item{
+    width: 100%;
+    padding: 0 .5rem;
+    &:hover{
+      background-color: $theme-green;
+      color: $black;
+    }
+  }
 
 
   .hero_top .hero_text-sect {

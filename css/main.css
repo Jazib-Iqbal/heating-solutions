@@ -9022,6 +9022,10 @@ body {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
+.heading_sect p {
+  width: 80%;
+  margin: 1rem auto;
+}
 
 .after_contant {
   position: relative;
@@ -9336,6 +9340,9 @@ header {
     flex-direction: column-reverse;
   }
 }
+.service_card {
+  cursor: pointer;
+}
 .service_card .after_contant:after {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgb(0, 0, 0) 21%, rgba(0, 0, 0, 0.0340511204) 95%);
@@ -9349,9 +9356,17 @@ header {
   padding: 1rem 0;
   color: #ffffff;
   z-index: 2;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   text-transform: uppercase;
+}
+.service_card figcaption h3 {
+  padding: 0 0.5rem;
+}
+.service_card figcaption p {
+  font-weight: normal;
+  margin: 0.5rem;
+  font-size: calc(0.5rem + 0.5vw);
 }
 
 @media (max-width: 992px) {
@@ -9374,6 +9389,14 @@ header {
 @media (max-width: 576px) {
   .d_sm-none {
     display: none;
+  }
+  .nav-item {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .nav-item:hover {
+    background-color: #8CC43F;
+    color: #000000;
   }
   .hero_top .hero_text-sect {
     transform: translate(-50%, -50%);
