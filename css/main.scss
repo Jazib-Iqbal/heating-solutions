@@ -17,6 +17,16 @@
 //styling of nav section
 
 
+header{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  // background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
 .nav_top {
   background-color: $theme-green;
   padding: .5rem 0;
@@ -49,7 +59,6 @@
 
 .navbar-brand {
   text-transform: uppercase;
-  display: none;
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -93,11 +102,16 @@
 
 
 .nav_second {
-  padding: 1.5rem 0;
+  padding: .5rem 0;
+  background-color: $white;
 }
 
 
 //styling of hero sect
+
+.hero_sect{
+  padding-top: 7rem;
+}
 
 .hero_top {
 
@@ -112,7 +126,7 @@
     }
   }
   img {
-    height: 90vh;
+    height: 60vh;
     width: 100%;
     object-fit: cover;
   }
@@ -152,9 +166,8 @@
     left: 50%;
     width: 100%;
     height: 100%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-
+    transform: translate(-50%, -55%);
+    z-index: 1;
     color: $white;
 
     h1,h2{
@@ -343,9 +356,7 @@
   padding: 1rem .5rem;
 }
 
-.intro_list{
-  
-}
+
 
 
 @media(max-width: 1200px) {
@@ -414,7 +425,7 @@
 
 
   .hero_top .hero_text-sect p{
-    width: 80%;
+    width: 70%;
   }
 
 }
@@ -435,6 +446,11 @@
   }
 
   //styling of nav section
+
+
+  .hero_top .hero_text-sect {
+    transform: translate(-50%, -50%);
+  }
   .button_wrapper{
     .btn_custom {
       font-size: calc(.75rem + .4vw);
