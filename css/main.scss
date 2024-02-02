@@ -20,7 +20,7 @@
 header{
   position: fixed;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   // background-color: white;
   top: 0;
   left: 0;
@@ -406,6 +406,29 @@ header{
 
 }
 
+
+.service_card{
+  .after_contant{
+    &:after{
+      background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 21%, rgba(0,0,0,0.03405112044817926) 95%);
+    z-index: 1;
+    }
+  }
+
+  figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    color: $white;
+    z-index: 2;
+    text-align: center;
+    font-weight: bold;text-transform: uppercase;
+  }
+}
+
 @media(max-width: 992px) {
 
   //styling of nav section
@@ -428,14 +451,21 @@ header{
     width: 70%;
   }
 
+
+  .our_services .intro_sect {
+    [class*="col-"] {
+      padding: 1rem 12px;
+    }
+  }
+
 }
 
 // @media(max-width: 992px) {
-//   .intro_sect {
-//     [class*="col-"] {
-//       padding: 1rem 12px;
-//     }
-//   }
+  // .intro_sect {
+  //   [class*="col-"] {
+  //     padding: 1rem 12px;
+  //   }
+  // }
 // }
 
 
@@ -458,6 +488,30 @@ header{
     }
     .btn_padding{
       padding: .75rem 1rem;
+    }
+  }
+
+  .hero_top img{
+    height: 80vh;
+  }
+
+  .nav_top-item{
+    padding: .35rem .75rem;
+    background-color: $white;
+    color: $theme-green;
+    text-transform: uppercase;
+
+    &:hover{
+      color: $black;
+    }
+
+
+    .call_now{
+      display: block;
+    }
+
+    .email_nav-btn{
+      display: block;
     }
   }
 
