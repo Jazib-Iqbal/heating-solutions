@@ -74,6 +74,10 @@ body{
     position: relative;
 }
 
+.sect_light-gray{
+    background-color: $lg_gray;
+}
+
 .btn_custom{
     transition: all .3s linear;
     display: inline-block;
@@ -139,7 +143,7 @@ body{
 }
 
 .sec_space{
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 .border_bottom{
     border-bottom: 2px solid $theme-dark-blue;
