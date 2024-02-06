@@ -9049,6 +9049,56 @@ body {
     font-size: calc(1rem + 0.5vw);
   }
 }
+.side_social-bar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+.side_social-bar .social_item {
+  padding: 1rem;
+  font-size: calc(1.5rem + 1vw);
+  color: #ffffff;
+}
+.side_social-bar .social_item span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.3s linear;
+  z-index: -1;
+  height: 100%;
+  width: 19rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  font-size: calc(1.2rem + 0.5vw);
+  text-transform: uppercase;
+  align-items: center;
+}
+.side_social-bar .social_item:hover span {
+  transform: translateX(0);
+}
+.side_social-bar .whatsapp {
+  background-color: #28A119;
+}
+.side_social-bar .whatsapp span {
+  background-color: #28A119;
+}
+.side_social-bar .twitter {
+  background-color: #1C9CEA;
+}
+.side_social-bar .twitter span {
+  background-color: #1C9CEA;
+}
+.side_social-bar .linkedin {
+  background-color: #0077AF;
+}
+.side_social-bar .linkedin span {
+  background-color: #0077AF;
+}
+
 header {
   position: fixed;
   width: 100%;

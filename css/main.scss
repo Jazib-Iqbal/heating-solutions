@@ -14,6 +14,71 @@
 //   outline: 1px solid red;
 // }
 
+
+
+// stylinhg of side_social-bar section
+
+.side_social-bar{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+
+  .social_item{
+    padding: 1rem;
+    font-size: calc(1.5rem + 1vw);
+    color: $white;
+    // overflow: hidden;
+
+    span{
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(100%);
+      transition: all .3s linear;
+      z-index: -1;
+      height: 100%;
+      width: 19rem;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 1rem;
+      font-size: calc(1.2rem + .5vw);
+      text-transform: uppercase;
+      align-items: center;
+    }
+    
+    &:hover{
+
+      span{
+        transform: translateX(0);
+      }
+      
+
+    }
+  }
+
+  .whatsapp{
+    background-color: $whatsapp-green;
+    span{
+      background-color: $whatsapp-green;
+    }
+  }
+
+  .twitter{
+    background-color: $twitter-color;
+    span{
+      background-color: $twitter-color;
+    }
+  }
+
+  .linkedin{
+    background-color: $linkedin-blue;
+    span{
+      background-color: $linkedin-blue;
+    }
+  }
+}
 //styling of nav section
 
 
