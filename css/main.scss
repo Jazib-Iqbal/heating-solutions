@@ -23,11 +23,11 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1000;
+  z-index: 99;
 
   .social_item{
-    padding: 1rem;
-    font-size: calc(1.5rem + 1vw);
+    padding: .5rem;
+    font-size: calc(1rem + .5vw);
     color: $white;
     // overflow: hidden;
 
@@ -39,7 +39,7 @@
       transition: all .3s linear;
       z-index: -1;
       height: 100%;
-      width: 19rem;
+      width: 12rem;
       display: flex;
       justify-content: flex-start;
       padding-left: 1rem;
@@ -56,7 +56,11 @@
       
 
     }
+
+    
   }
+
+  
 
   .whatsapp{
     background-color: $whatsapp-green;
@@ -79,6 +83,77 @@
     }
   }
 }
+
+
+.side_social-btn{
+  position: fixed;
+  bottom: 10rem;
+  right: 0;
+  z-index: 1000;
+  padding: .5rem;
+  font-size: calc(1rem + .5vw);
+  border: 0;
+  // margin-top: 2rem !important;
+}
+
+
+// styling of site_model setion
+
+.site_model{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: $black, $alpha: .6);
+  z-index: 100;
+
+  .site_model-inner{
+
+    .heading_sect{
+      p{
+        margin: 1rem auto;
+
+      }
+    }
+    background-color: $white;
+    text-align: center;
+    max-width: 786px !important;
+    padding: 1rem;
+
+
+    p{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .site-model-cards{
+      
+      padding: 1rem;
+      padding-top: 0;
+
+
+      .site_model-card{
+        img{
+          width: 70%;
+          margin: 0 auto;
+        }
+
+        figcaption{
+          font-weight: calc(1rem + .5vw);
+        }
+      }
+    }
+
+  }
+}
+
+
+//styling of model_btn
+
+
+
 //styling of nav section
 
 
@@ -701,6 +776,15 @@ header{
 
 
 @media(max-width: 576px) {
+
+
+  // styling of .site_model-card section
+
+  .site_model-card{
+    figcaption{
+      font-size: calc(.3rem + .2vw) !important;
+    }
+  }
 
   .d_sm-none{
     display: none;
