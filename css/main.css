@@ -10012,6 +10012,7 @@ body {
 }
 
 .side_social-btn {
+  display: none;
   position: fixed;
   bottom: 10rem;
   right: 0;
@@ -10022,7 +10023,6 @@ body {
 }
 
 .site_model {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -10039,6 +10039,12 @@ body {
 }
 .site_model .site_model-inner .heading_sect p {
   margin: 1rem auto;
+}
+.site_model .site_model-inner .btn_wrapper {
+  margin: 1.5rem 0;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem;
 }
 .site_model .site_model-inner p {
   width: 80%;
