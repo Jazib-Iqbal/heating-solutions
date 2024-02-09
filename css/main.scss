@@ -18,20 +18,20 @@
 
 // stylinhg of side_social-bar section
 
-.side_social-bar{
+.side_social-bar {
   position: fixed;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
   z-index: 99;
 
-  .social_item{
+  .social_item {
     padding: .5rem;
     font-size: calc(1rem + .5vw);
     color: $white;
     // overflow: hidden;
 
-    span{
+    span {
       position: absolute;
       top: 0;
       right: 0;
@@ -47,45 +47,48 @@
       text-transform: uppercase;
       align-items: center;
     }
-    
-    &:hover{
 
-      span{
+    &:hover {
+
+      span {
         transform: translateX(0);
       }
-      
+
 
     }
 
-    
+
   }
 
-  
 
-  .whatsapp{
+
+  .whatsapp {
     background-color: $whatsapp-green;
-    span{
+
+    span {
       background-color: $whatsapp-green;
     }
   }
 
-  .twitter{
+  .twitter {
     background-color: $twitter-color;
-    span{
+
+    span {
       background-color: $twitter-color;
     }
   }
 
-  .linkedin{
+  .linkedin {
     background-color: $linkedin-blue;
-    span{
+
+    span {
       background-color: $linkedin-blue;
     }
   }
 }
 
 
-.side_social-btn{
+.side_social-btn {
 
   display: none;
   position: fixed;
@@ -101,7 +104,7 @@
 
 // styling of site_model setion
 
-.site_model{
+.site_model {
   // display: none;
   position: fixed;
   top: 0;
@@ -111,53 +114,72 @@
   background-color: rgba($color: $black, $alpha: .6);
   z-index: 100;
 
-  .site_model-inner{
+  .site_model-inner {
 
-    .heading_sect{
-      p{
+    .close_icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: .5rem;
+      border: 0;
+      background-color: transparent;
+      font-size: calc(1.5rem + 1vw);
+      color: $black;
+      margin-bottom: .5rem;
+
+      i{
+        &:before{
+          margin-bottom: .65rem;
+        }
+      }
+    }
+
+    .heading_sect {
+      p {
         margin: 1rem auto;
 
       }
 
-      
+
     }
 
-    .btn_wrapper{
+    .btn_wrapper {
       margin: 1.5rem 0;
       justify-content: center !important;
       align-items: center !important;
       gap: 1rem;
     }
+
     background-color: $white;
     text-align: center;
     max-width: 786px !important;
     padding: 1rem;
 
 
-    p{
+    p {
       width: 80%;
       margin: 0 auto;
     }
 
-    .site-model-cards{
-      
+    .site-model-cards {
+
       padding: 1rem;
       padding-top: 0;
 
 
-      .site_model-card{
-        img{
+      .site_model-card {
+        img {
           width: 70%;
           margin: 0 auto;
         }
 
-        figcaption{
+        figcaption {
           font-weight: calc(1rem + .5vw);
         }
       }
 
 
-      
+
     }
 
   }
@@ -171,7 +193,7 @@
 //styling of nav section
 
 
-header{
+header {
   position: fixed;
   width: 100%;
   // height: 100%;
@@ -243,7 +265,7 @@ header{
 
 .company_name {
   font-size: calc(2rem + 1vw);
-  color: $theme-green!important;
+  color: $theme-green !important;
   // padding: 0 1.5rem!important;
 }
 
@@ -263,14 +285,14 @@ header{
 
 //styling of hero sect
 
-.hero_sect{
+.hero_sect {
   padding-top: 7rem;
 }
 
 .hero_top {
 
-  .hero_ing-sect{
-    &::after{
+  .hero_ing-sect {
+    &::after {
       content: '';
       position: absolute;
       inset: 0;
@@ -279,13 +301,14 @@ header{
       background-color: rgba($color: $black, $alpha: .6);
     }
   }
+
   img {
     height: 60vh;
     width: 100%;
     object-fit: cover;
   }
 
-  
+
   .hero_top-text {
     position: absolute;
     width: 100%;
@@ -314,7 +337,7 @@ header{
 
   }
 
-  .hero_text-sect{
+  .hero_text-sect {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -324,28 +347,30 @@ header{
     z-index: 1;
     color: $white;
 
-    h1,h2{
+    h1,
+    h2 {
       text-transform: capitalize;
     }
 
-    h2{
+    h2 {
       margin: 1rem 0;
     }
 
-    p{
+    p {
       width: 40%;
       margin: 1rem 0;
     }
   }
 
-  .button_wrapper{
+  .button_wrapper {
     gap: 1rem;
   }
 
-  .get_service{
-    i{
+  .get_service {
+    i {
+
       // font-size: 1.5rem;
-      &:before{
+      &:before {
         transform: translateY(-3px);
       }
     }
@@ -362,7 +387,7 @@ header{
 
   padding-bottom: 2rem;
 
-  &:after{
+  &:after {
     content: '';
     position: absolute;
     // inset: o;
@@ -374,11 +399,11 @@ header{
     background-color: $theme-green;
   }
 
-  
+
 }
 
 
-.hero_bottom-inner{
+.hero_bottom-inner {
   // position: absolute;
   width: 100%;
   // height: 100%;
@@ -386,48 +411,55 @@ header{
   // bottom: 2rem;
 }
 
-.col_a{
+.col_a {
   margin-top: auto;
 }
 
 
-.hero_bottom-contant{
+.hero_bottom-contant {
   gap: 1.25rem;
   margin-top: -19rem;
-  .row{
+
+  .row {
     justify-content: center;
     margin-top: auto;
   }
 }
 
-.card_img-a{
+.card_img-a {
   margin-left: .7rem;
 }
-.hero_card{
+
+.hero_card {
   padding-right: .5rem;
-  figure{
+
+  figure {
     display: flex;
     align-items: flex-start;
   }
+
   border-radius: .25rem;
   background-color: $white;
   padding: 1rem 0;
   text-align: left;
-  img{
+
+  img {
     width: 5rem;
     height: 5rem;
     // display: block;
     // margin: 0 auto;
   }
-  figcaption{
+
+  figcaption {
     width: 60%;
     color: $green;
-    h2{
+
+    h2 {
       font-size: calc(.7rem + .3vw);
       margin-bottom: 1rem;
     }
 
-    p{
+    p {
       color: lighten($color: $black, $amount: 30%);
       text-align: left;
     }
@@ -435,48 +467,53 @@ header{
 }
 
 
-.booking_form-sect{
+.booking_form-sect {
 
-  h2{
+  h2 {
     text-transform: uppercase;
     font-size: calc(.8rem + .5vw);
     font-weight: bold;
   }
 
-  p{
+  p {
     margin: 1rem 0;
   }
+
   z-index: 10;
   padding: 1.5rem;
   color: $white;
-  &:before{
+
+  &:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     inset: 0;
-    background: rgb(27,132,102);
-    background: linear-gradient(145deg, rgba(27,132,102,1) 37%, rgba(88,196,120,1) 95%);
+    background: rgb(27, 132, 102);
+    background: linear-gradient(145deg, rgba(27, 132, 102, 1) 37%, rgba(88, 196, 120, 1) 95%);
     z-index: -1;
     border-radius: .25rem;
   }
 }
 
 
-.booking_form{
+.booking_form {
 
-  
+
   flex-direction: column;
   gap: 1rem;
 
-  input,select,button{
+  input,
+  select,
+  button {
     border-radius: .25rem;
     border: 0;
     padding: .5rem;
     text-transform: uppercase;
+
     &:focus-visible {
       outline: -webkit-focus-ring-color auto 0;
-      
+
     }
   }
 
@@ -485,12 +522,12 @@ header{
     color: lighten($color: $black, $amount: 40%);
   }
 
-  select{
+  select {
     font-size: .65rem;
     color: lighten($color: $black, $amount: 40%);
   }
 
-  button{
+  button {
     font-size: .65rem;
     color: lighten($color: $black, $amount: 40%);
     text-transform: uppercase;
@@ -502,7 +539,7 @@ header{
 
 //styling of intro_top-strip sect
 
-.intro_top-strip{
+.intro_top-strip {
 
   background-color: lighten($color: $black, $amount: 30%);
   color: $white;
@@ -528,81 +565,83 @@ header{
   //styling of hero_bottom section
 
 
-  .hero_bottom-contant{
+  .hero_bottom-contant {
     margin-top: 0;
     padding-top: 1.5rem;
   }
 
-  .row_a{
+  .row_a {
     flex-direction: column-reverse;
   }
 
   .intro_sect {
-       
-  .hero_bottom-contant .row_b{
-    justify-content: center!important;
-    
-  }
+
+    .hero_bottom-contant .row_b {
+      justify-content: center !important;
+
+    }
   }
 
-  .hero_card{
-    margin: .75rem 0!important;
+  .hero_card {
+    margin: .75rem 0 !important;
   }
-  .form_col{
+
+  .form_col {
     width: 100%;
     margin-bottom: .5rem;
   }
-  .hero_row{
+
+  .hero_row {
     flex-direction: column-reverse;
   }
 
-  
+
 
 }
 
 
 //styling of our_standards section
 
-.our_standards{
-  .row{
+.our_standards {
+  .row {
     align-items: center;
   }
 }
 
-.our_standard-text-sect{
+.our_standard-text-sect {
 
-  h2{
+  h2 {
     font-size: calc(2rem + .5vw);
     font-weight: bold;
     text-transform: capitalize;
     color: $theme-green;
   }
 
-  p{
+  p {
     margin: 1rem 0;
     color: lighten($color: $black, $amount: 40%);
   }
 
-  .btn_wrapper{
+  .btn_wrapper {
     gap: 1rem;
   }
 
 }
 
-.our_standards-lists{
+.our_standards-lists {
   margin: 1.5rem 0;
   gap: 2rem;
 
 
-  .standard_list-item{
-    i{
+  .standard_list-item {
+    i {
       margin-right: .5rem;
       margin-bottom: .25rem;
     }
   }
 }
 
-.our_standard-btn{
+.our_standard-btn {
   background-color: $theme-green;
   text-transform: uppercase;
 }
@@ -611,17 +650,18 @@ header{
 
 
 
-.service_card{
+.service_card {
   cursor: pointer;
-  .after_contant{
-    &:after{
-      background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 21%, rgba(0,0,0,0.03405112044817926) 95%);
-    z-index: 1;
+
+  .after_contant {
+    &:after {
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 21%, rgba(0, 0, 0, 0.03405112044817926) 95%);
+      z-index: 1;
     }
   }
 
-  figcaption{
+  figcaption {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -633,11 +673,11 @@ header{
     font-weight: bold;
     text-transform: uppercase;
 
-    h3{
+    h3 {
       // padding: 0 1rem;
     }
 
-    p{
+    p {
       font-weight: normal;
       margin: .5rem 0;
       text-transform: initial;
@@ -650,8 +690,8 @@ header{
 
 
 
-.about_us{
-  .row{
+.about_us {
+  .row {
     align-items: center;
   }
 }
@@ -663,49 +703,49 @@ header{
 
 //styling of body_bottom-section section
 
-.body_bottom-section{
+.body_bottom-section {
   position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
   z-index: 10000;
 
-  .alert{
+  .alert {
     margin: 0;
     padding: 2rem;
   }
 
-  .alert_inner{
+  .alert_inner {
     justify-content: space-between;
 
 
-    .bell_icon{
+    .bell_icon {
       font-size: 4rem;
       color: $theme-green;
     }
 
-    p{
+    p {
       width: 50%;
     }
 
-    .btn_wrapper{
+    .btn_wrapper {
       gap: 1rem;
     }
 
-    
+
   }
 
-  .alert-dismissible .btn-close{
+  .alert-dismissible .btn-close {
     padding-top: .5rem;
   }
 }
 
 // @media(max-width: 992px) {
-  // .intro_sect {
-  //   [class*="col-"] {
-  //     padding: 1rem 12px;
-  //   }
-  // }
+// .intro_sect {
+//   [class*="col-"] {
+//     padding: 1rem 12px;
+//   }
+// }
 // }
 
 
@@ -729,14 +769,14 @@ header{
   }
 
 
-  .hero_top .hero_text-sect p{
+  .hero_top .hero_text-sect p {
     width: 70%;
   }
 
 
-  
 
-  .our_standards{
+
+  .our_standards {
     .intro_sect {
       [class*="col-"] {
         padding: 1rem 12px;
@@ -744,45 +784,47 @@ header{
     }
   }
 
-  img{
+  img {
     margin-bottom: 1rem;
   }
 
   //styling of .body_bottom-section setion
 
-  .our_services{
+  .our_services {
 
-    .heading_sect{
+    .heading_sect {
 
-      h2{
-        margin-bottom: 3rem!important;
+      h2 {
+        margin-bottom: 3rem !important;
       }
-      
+
     }
 
-    .intro_sect{
+    .intro_sect {
 
 
       [class*="col-"] {
         padding: 1rem 12px;
       }
-  
+
     }
 
   }
 
 
-  
 
-  .body_bottom-section{
-    .alert_inner{
+
+  .body_bottom-section {
+    .alert_inner {
       flex-direction: column;
       gap: 2rem;
 
-      p{
+      p {
         width: 100%;
         text-align: justify;
-      };
+      }
+
+      ;
     }
   }
 }
@@ -794,22 +836,23 @@ header{
 
   // styling of .site_model-card section
 
-  .site_model-card{
-    figcaption{
+  .site_model-card {
+    figcaption {
       font-size: calc(.3rem + .2vw) !important;
     }
   }
 
-  .d_sm-none{
+  .d_sm-none {
     display: none;
   }
 
   //styling of nav section
 
-  .nav-item{
+  .nav-item {
     width: 100%;
     padding: 0 .5rem;
-    &:hover{
+
+    &:hover {
       background-color: $theme-green;
       color: $black;
     }
@@ -819,41 +862,43 @@ header{
   .hero_top .hero_text-sect {
     transform: translate(-50%, -50%);
   }
-  .button_wrapper{
+
+  .button_wrapper {
     .btn_custom {
       font-size: calc(.75rem + .4vw);
       font-weight: bold;
     }
-    .btn_padding{
+
+    .btn_padding {
       padding: .75rem 1rem;
     }
   }
 
-  .hero_top img{
+  .hero_top img {
     height: 80vh;
   }
 
-  .nav_top-item{
+  .nav_top-item {
     padding: .35rem .75rem;
     background-color: $white;
     color: $theme-green;
     text-transform: uppercase;
 
-    &:hover{
+    &:hover {
       color: $black;
     }
 
 
-    .call_now{
+    .call_now {
       display: block;
     }
 
-    .email_nav-btn{
+    .email_nav-btn {
       display: block;
     }
   }
 
-  
+
   // styling of our_standards section
 
   .our_standards-lists {

@@ -10037,6 +10037,20 @@ body {
   max-width: 786px !important;
   padding: 1rem;
 }
+.site_model .site_model-inner .close_icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5rem;
+  border: 0;
+  background-color: transparent;
+  font-size: calc(1.5rem + 1vw);
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+.site_model .site_model-inner .close_icon i:before {
+  margin-bottom: 0.65rem;
+}
 .site_model .site_model-inner .heading_sect p {
   margin: 1rem auto;
 }
@@ -10187,7 +10201,9 @@ header {
   z-index: 1;
   color: #ffffff;
 }
-.hero_top .hero_text-sect h1, .hero_top .hero_text-sect .h1, .hero_top .hero_text-sect h2, .hero_top .hero_text-sect .h2 {
+.hero_top .hero_text-sect h1, .hero_top .hero_text-sect .h1,
+.hero_top .hero_text-sect h2,
+.hero_top .hero_text-sect .h2 {
   text-transform: capitalize;
 }
 .hero_top .hero_text-sect h2, .hero_top .hero_text-sect .h2 {
@@ -10296,13 +10312,17 @@ header {
   flex-direction: column;
   gap: 1rem;
 }
-.booking_form input, .booking_form select, .booking_form button {
+.booking_form input,
+.booking_form select,
+.booking_form button {
   border-radius: 0.25rem;
   border: 0;
   padding: 0.5rem;
   text-transform: uppercase;
 }
-.booking_form input:focus-visible, .booking_form select:focus-visible, .booking_form button:focus-visible {
+.booking_form input:focus-visible,
+.booking_form select:focus-visible,
+.booking_form button:focus-visible {
   outline: -webkit-focus-ring-color auto 0;
 }
 .booking_form input::-moz-placeholder {
