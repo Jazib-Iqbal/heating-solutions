@@ -23,7 +23,7 @@
     
 }
 
-h1,h2,h3,h4,h5,h6,ul,p{
+h1,h2,h3,h4,h5,h6,ul,p,figure{
     margin: 0;
     padding: 0;
 }
@@ -177,6 +177,11 @@ body{
         left: 0;
     }
 
+}
+
+
+.row-reverse{
+    flex-direction: row-reverse;
 }
 
 

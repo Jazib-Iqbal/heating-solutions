@@ -43,7 +43,7 @@
       display: flex;
       justify-content: flex-start;
       padding-left: 1rem;
-      font-size: calc(1.2rem + .5vw);
+      font-size: calc(.8rem + .3vw);
       text-transform: uppercase;
       align-items: center;
     }
@@ -105,7 +105,7 @@
 // styling of site_model setion
 
 .site_model {
-  // display: none;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -673,9 +673,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
 
-    h3 {
-      // padding: 0 1rem;
-    }
+    
 
     p {
       font-weight: normal;
@@ -747,6 +745,152 @@ header {
 //   }
 // }
 // }
+
+
+//styling of contact_us page
+
+.contact_page-hero{
+  margin-top: 8rem;
+  background-image: url(../img/contact-us-hero.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:after{
+    background-color: rgba($color: $black, $alpha: .5);
+  }
+
+
+
+  .contact_page-inner{
+    z-index: 1;
+    padding: 8rem 0;
+    justify-content: space-between;
+    align-items: center;
+    color: white !important;
+
+    h2{
+      text-transform: capitalize;
+      font-size: calc(1.5rem + 1vw);
+      font-weight: bolder;
+    }
+    
+
+    .nav{
+      align-items: center;
+      // display: flex;
+      .breadcrumb{
+        margin-bottom: 0 !important;
+      }
+      
+    }
+  }
+}
+
+
+.breadcrum_item{
+  color: $white !important;
+
+  a{
+    color: $white !important;
+    display: inline-block!important;
+    text-decoration: none!important;
+  }
+  
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+  color: $white;
+}
+
+
+// styling of footer section
+
+.footer_top{
+  padding: 2rem 0;
+}
+
+.footer_col-inner{
+  align-items: flex-end;
+
+  figure{
+    width: 4rem;
+    height: 4rem;
+    background-color: $theme-green;
+    border-radius: .5rem;
+    margin-right: 1rem;
+
+    i{
+      font-size: calc(1.5rem + .5vw);
+      color: $white;
+    }
+  }
+
+  figcaption{
+    span{
+      display: block;
+      margin-bottom: .25rem;
+      text-transform: uppercase;
+      font-size: smaller;
+    }
+
+    strong{
+      text-transform: capitalize;
+      font-size: calc(1rem + .3vw);
+    }
+  }
+}
+
+
+.footer_main{
+  padding: 2rem 0;
+}
+
+.footer_heading{
+  font-size: calc(1.5rem + .5vw);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+
+.footer_main-inner{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social_list{
+  gap: .75rem;
+}
+
+.footer_list-item{
+  padding: .5rem;
+}
+
+.footer_form-sect{
+  input, button{
+    border-radius: .5rem;
+    border: 1px solid lighten($color: #000000, $amount: 40%);
+    padding: .75rem 0;
+  }
+
+  input{
+    padding-left: 1rem;
+  }
+
+  button{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: .5rem;
+  }
+}
+
+
+.footer_bottom{
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
 
 
 
