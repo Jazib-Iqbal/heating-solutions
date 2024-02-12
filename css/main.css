@@ -10517,6 +10517,7 @@ header {
 
 .footer_top {
   padding: 2rem 0;
+  background-color: #d2e8b4;
 }
 
 .footer_col-inner {
@@ -10568,6 +10569,9 @@ header {
   padding: 0.5rem;
 }
 
+.footer_form-sect {
+  margin: 0 0.5rem;
+}
 .footer_form-sect input, .footer_form-sect button {
   border-radius: 0.5rem;
   border: 1px solid #666666;
@@ -10585,6 +10589,7 @@ header {
 .footer_bottom {
   padding: 1.5rem 0;
   text-align: center;
+  background-color: #deeec8;
 }
 
 @media (max-width: 992px) {
@@ -10619,6 +10624,15 @@ header {
   .body_bottom-section .alert_inner p {
     width: 100%;
     text-align: justify;
+  }
+  .footer_top [class*=col-] {
+    padding: 1rem 12px;
+  }
+  .footer_top .footer_col-inner {
+    justify-content: flex-start;
+  }
+  .footer_main [class*=col-] {
+    padding: 1rem 12px;
   }
 }
 @media (max-width: 576px) {

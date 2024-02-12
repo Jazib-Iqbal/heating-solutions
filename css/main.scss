@@ -808,6 +808,7 @@ header {
 
 .footer_top{
   padding: 2rem 0;
+  background-color: lighten($color: $theme-green, $amount: 30%);
 }
 
 .footer_col-inner{
@@ -868,6 +869,7 @@ header {
 }
 
 .footer_form-sect{
+  margin: 0 .5rem;
   input, button{
     border-radius: .5rem;
     border: 1px solid lighten($color: #000000, $amount: 40%);
@@ -889,6 +891,7 @@ header {
 .footer_bottom{
   padding: 1.5rem 0;
   text-align: center;
+  background-color: lighten($color: $theme-green, $amount: 35%);
 }
 
 
@@ -971,6 +974,28 @@ header {
       ;
     }
   }
+
+
+  // styling of footer section
+
+    .footer_top {
+      [class*="col-"] {
+        padding: 1rem 12px;
+      }
+
+      .footer_col-inner {
+        justify-content: flex-start;
+      }
+    }
+
+
+    .footer_main{
+      [class*="col-"] {
+        padding: 1rem 12px;
+      }
+
+    }
+    
 }
 
 
