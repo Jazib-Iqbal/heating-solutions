@@ -623,7 +623,13 @@ header {
   }
 
   .btn_wrapper {
+
+
     gap: 1rem;
+
+    .our_standard-btn{
+      font-size: calc(.8rem + .5vw);
+    }
   }
 
 }

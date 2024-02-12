@@ -10400,6 +10400,9 @@ header {
 .our_standard-text-sect .btn_wrapper {
   gap: 1rem;
 }
+.our_standard-text-sect .btn_wrapper .our_standard-btn {
+  font-size: calc(0.8rem + 0.5vw);
+}
 
 .our_standards-lists {
   margin: 1.5rem 0;
