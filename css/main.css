@@ -9960,6 +9960,80 @@ body {
   flex-direction: row-reverse;
 }
 
+.theme_heading {
+  text-align: center;
+  padding: 1rem;
+}
+.theme_heading h2, .theme_heading .h2 {
+  font-size: calc(2rem + 0.5vw);
+  color: #8CC43F;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.theme_heading h2 small, .theme_heading .h2 small, .theme_heading h2 .small, .theme_heading .h2 .small {
+  color: orange;
+  display: block;
+  font-size: 50%;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+.theme_heading p {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.cards_pod .pod_card {
+  padding-top: 130%;
+  background-color: gray;
+  width: 100%;
+  border-radius: 1rem;
+}
+.cards_pod .pod_card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+}
+.cards_pod .pod_card strong {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 1rem 0.5rem;
+  transform: translateY(-50%);
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: calc(1rem + 0.5vw);
+  text-transform: uppercase;
+  z-index: 1;
+}
+.cards_pod .pod_card strong small, .cards_pod .pod_card strong .small {
+  font-size: 70%;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.cards_pod .row [class*=col-] {
+  padding: 1rem 12px;
+}
+
+.technician_sect .theme_heading {
+  padding: 0;
+  text-align: left !important;
+}
+.technician_sect p {
+  width: 100%;
+}
+
+.heading_sub {
+  font-size: calc(1.2rem + 0.5vw);
+  margin: 1rem 0;
+  display: inline-block;
+}
+
 @media (max-width: 576px) {
   .btn_bordered {
     font-size: calc(1rem + 0.5vw);
@@ -10477,31 +10551,31 @@ header {
   padding-top: 0.5rem;
 }
 
-.contact_page-hero {
+.hero_contant {
   margin-top: 8rem;
   background-image: url(../img/contact-us-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.contact_page-hero:after {
+.hero_contant:after {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.contact_page-hero .contact_page-inner {
+.hero_contant .hero_contant-inner {
   z-index: 1;
   padding: 8rem 0;
   justify-content: space-between;
   align-items: center;
   color: white !important;
 }
-.contact_page-hero .contact_page-inner h2, .contact_page-hero .contact_page-inner .h2 {
+.hero_contant .hero_contant-inner h2, .hero_contant .hero_contant-inner .h2 {
   text-transform: capitalize;
   font-size: calc(1.5rem + 1vw);
   font-weight: bolder;
 }
-.contact_page-hero .contact_page-inner .nav {
+.hero_contant .hero_contant-inner .nav {
   align-items: center;
 }
-.contact_page-hero .contact_page-inner .nav .breadcrumb {
+.hero_contant .hero_contant-inner .nav .breadcrumb {
   margin-bottom: 0 !important;
 }
 
