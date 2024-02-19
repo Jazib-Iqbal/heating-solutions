@@ -1,17 +1,78 @@
-.contact_body{
-    background-color: $theme-dark-blue;
-    padding: 1rem;
-    text-align: center;
+.experts_text-sect {
+
+    .theme_heading {
+        text-align: left;
+
+        p{
+            width: 100%;
+        }
+    }
+
+    .expert_img-sect{
+        padding: 1rem;
+    }
+
+    figure {
+        display: inline-block;
+        padding-top: 80%;
+        background-color: #eaeaea;
+        width: 100%;
+        margin-top: .5rem;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
 
 
 }
 
-.contact_heading{
-    color: $white;
-    margin: 3rem 0;
+
+.location{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    i{
+        color: $theme-green;
+    }
+}
+.expertSect-list{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    a{
+        display: inline-block;
+        text-decoration: none;
+        color: $black;
+        &:hover{
+            color: $black;
+
+            
+        }
+
+        i{
+            color: $theme-green;
+        }
+    }
 }
 
-a{
-    overflow: hidden;
+
+.booking_form-sect{
+    margin: 1rem 0;
 }
 
+.map_sect{
+    width: 100%;
+    height: 17rem;
+    margin: 1rem 0;
+
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}

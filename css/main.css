@@ -9787,6 +9787,15 @@ textarea.form-control-lg {
   font-family: BrandonText-Regular;
   src: url(../fonts/HVD\ Fonts\ -\ BrandonText-Regular.otf);
 }
+.width_fit-cont {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+.padding_custom {
+  padding: 1rem 1.5rem !important;
+}
+
 .btn_inprogress {
   display: inline-block;
   text-decoration: none;
@@ -10039,6 +10048,72 @@ body {
     font-size: calc(1rem + 0.5vw);
   }
 }
+.experts_text-sect .theme_heading {
+  text-align: left;
+}
+.experts_text-sect .theme_heading p {
+  width: 100%;
+}
+.experts_text-sect .expert_img-sect {
+  padding: 1rem;
+}
+.experts_text-sect figure {
+  display: inline-block;
+  padding-top: 80%;
+  background-color: #eaeaea;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.experts_text-sect figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.location {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.location i {
+  color: #8CC43F;
+}
+
+.expertSect-list {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.expertSect-list a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+.expertSect-list a:hover {
+  color: #000000;
+}
+.expertSect-list a i {
+  color: #8CC43F;
+}
+
+.booking_form-sect {
+  margin: 1rem 0;
+}
+
+.map_sect {
+  width: 100%;
+  height: 17rem;
+  margin: 1rem 0;
+}
+.map_sect iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .side_social-bar {
   position: fixed;
   right: 0;
